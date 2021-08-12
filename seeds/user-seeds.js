@@ -45,10 +45,10 @@ const userData = [
     password: "password6",
   },
   {
-    username: "sojornmojorn",
-    github: "sojornmojorn",
-    twitter: "sojornmojorn",
-    email: "sojornmojorn@email.com",
+    username: "MadHatter",
+    github: "MadHatter",
+    twitter: "MadHatter",
+    email: "MadHatter@email.com",
     password: "password7",
   },
 ];
