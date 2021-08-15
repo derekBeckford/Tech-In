@@ -1,0 +1,14 @@
+<article class="card">
+  <div class="title">
+    <a href="{{post_url}}" target="_blank" class="card-header display-6">{{title}}</a>
+  </div>
+  <div class="meta card-body">
+    {{user.username}}
+    <a href="#" class="fa fa-twitter">{{user.twitter}}</a> 
+    on
+    {{format_date created_at}}
+    |
+    <a href="/post/{{id}}">{{comments.length}}
+      {{format_plural "comment" comments.length}}</a>
+  </div>
+</article>
