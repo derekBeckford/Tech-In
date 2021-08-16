@@ -1,0 +1,33 @@
+<section>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Post
+  </h2>
+  <form class="edit-post-form">
+    <div class="title-create">
+      <label for="post-title">Title</label>
+      <br />
+      <input
+        type="text"
+        id="post-title"
+        name="post-title"
+        class="form-control title-create"
+        value="{{post.title}}"
+      />
+    </div>
+    <div class="post-content-create">
+      <label for="post-content">Post Content</label>
+      <br />
+      <textarea
+        id="post-content"
+        name="post-content"
+        class="form-control"
+      >{{post.post_content}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save post</button>
+    <button type="button" class="btn btn-danger delete-post-btn">Delete post</button>
+  </form>
+</section>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

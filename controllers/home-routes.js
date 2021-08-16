@@ -49,7 +49,7 @@ router.get("/post/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "title", "created_at", "post_content"],
+    attributes: ["id", "title", "post_content", "created_at", "post_content"],
     include: [
       {
         model: User,
@@ -70,7 +70,13 @@ router.get("/post/:id", (req, res) => {
         res.status(404).json({ message: "No post found with this id" });
         return;
       }
-      res.json(dbPostData);
+
+      const post = dbPostData.get({ plain: true });
+
+      res.render("single-post", {
+        post,
+        loggedIn: req.session.loggedIn,
+      });
     })
     .catch((err) => {
       console.log(err);

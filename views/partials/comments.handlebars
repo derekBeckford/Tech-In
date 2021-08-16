@@ -1,14 +1,28 @@
 <div class="comments">
   {{#each this}}
-    <section class="comment">
-      <div class="meta">
-        {{user.username}}
-        on
-        {{format_date created_at}}
-      </div>
+    <section class="comment card-body">
       <div class="text">
         {{comment_text}}
       </div>
+      <div class="meta card-header">
+        -
+        {{user.username}}
+
+        <a
+          href="https://twitter.com/{{user.twitter}}"
+          target="_blank"
+          class="fa fa-twitter link-dark"
+        >{{user.twitter}}</a>
+        <a
+          href="https://github.com/{{user.github}}/"
+          target="_blank"
+          class="fa fa-github link-dark"
+          aria-hidden="true"
+        >{{user.github}}</a>
+        on
+        {{format_date created_at}}
+      </div>
+
     </section>
   {{/each}}
 </div>
