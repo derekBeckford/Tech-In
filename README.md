@@ -22,6 +22,8 @@
   
   A tech blog that allows users to connect with each other. 
   
+  https://github.com/derekBeckford/Tech-In
+  
   ![image](https://user-images.githubusercontent.com/82908627/129504655-ca6ce6fd-58cc-4992-b8aa-994cfa0041d4.png)
 
   ## Installation 
